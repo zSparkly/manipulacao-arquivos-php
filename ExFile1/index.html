@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com Formulários</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .centralizado {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <H1>
+            <p class="centralizado"> Informe abaixo:</p>
+        </H1>
+    </header>
+    <section>
+        <form action="calculo.php" method="post">
+            <label for="frase1">Frase 1 </label>
+            <input type="text" name="frase1">
+            <br>
+            <label for="frase2">Frase 2</label>
+            <input type="text" name="frase2">
+            <br>
+            <label for="frase3">Frase 3</label>
+            <input type="text" name="frase3">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <form action="read.php" method="post">
+            <button type="submit">Ler Arquivo</button>
+        </form>
+        
+    </section>
+
+</body>
+</html>
